@@ -16,3 +16,51 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Build Results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Rider project files
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Visual Studio working folders
+.vs/
+
+# .NET secrets & local settings
+secrets.json
+appsettings.Development.json
+
+# Node modules (in case you're using npm for frontend packages)
+node_modules/
+
+# Log files
+*.log
+
+# Publish output
+publish/
+dist/
+
+# Temporary files
+*.tmp
+*.temp
+
+# NuGet packages folder (if present)
+packages/
+
+# Others
+*.db
+*.db-shm
+*.db-wal
