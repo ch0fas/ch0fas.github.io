@@ -6,4 +6,10 @@
     border: 5px outset crimson;
     background-color: beige;
     text-align: center;
+    padding: 8px 12px;
+}
+
+#index_links {
+    font-size: 24px;
+    font-weight: 800;
 }

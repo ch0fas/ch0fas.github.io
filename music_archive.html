@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/papaparse@5.5.3/papaparse.min.js"></script>
+    <title>Chofas Archive</title>
+</head>
+<body>
+    <h1>Music Archive</h1>
+
+    <p>In August 2022* I began taking note of every music album I heard. Today, that list is well over 200 albums long and it can be seen right here :)</p> <br>
+    <p>Albums can also be searched by name, artist/group name, date in which I heard the album (Day/Month/Year), and Year of Release</p>
+
+    <div>
+        <label>Album Name: <input type="text" id="nameFilter"></label> <br>
+        <label>Artist/Group: <input type="text" id="artistFilter"></label> <br>
+        <label>Listening Day: <input type="number" min="1" max="31" id="dayFilter"></label> <br>
+        <label>Listening Month: <input type="number" min="1" max="12" id="monthFilter"></label> <br>
+        <label>Listening Year: <input type="number" min="2022" max="2025" id="yearFilter"></label> <br>
+        <label>Album Number: <input type="number" min="1" id="albumNumber"></label> <br>
+        <label>Year Of Release: <input type="number" id="releaseFilter"></label> <br>
+    </div>
+
+    <h2>The list</h2>
+    <table id="albumsTable">
+        <thead>
+            <tr>
+                <th>Name</th><th>Artist/Group</th><th>Day</th><th>Month</th><th>Year</th><th>Album Num</th><th>Year of Release</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="ma.js"></script>
+</body>
+</html>
