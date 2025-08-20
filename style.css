@@ -1,0 +1,9 @@
+#main_title {
+    text-align: center;
+}
+
+.index_div {
+    border: 5px outset crimson;
+    background-color: beige;
+    text-align: center;
+}
