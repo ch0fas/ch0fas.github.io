@@ -1,7 +1,7 @@
 let albumData = [];
 
 // Loading CSV
-fetch('assets/data/albums.csv')
+fetch('../assets/data/albums.csv')
     .then(response => response.text())
     .then(csvText => {
         const results = Papa.parse(csvText, { header: true});
