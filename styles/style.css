@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 5px;
     background-color: antiquewhite;
     max-width: 100%;
     margin-inline: auto;
@@ -9,14 +9,17 @@ body {
     text-align: center;
     vertical-align: bottom;
     font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #sub_titles {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #to_links {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .index_div {
@@ -41,12 +44,14 @@ table, th, td {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2fr 1fr 10fr 6fr 6fr;
+    border: 1px solid;
 }
 
 .header {
     grid-row: 1 / 2;
     grid-column: 2 / 6;
     border-bottom: 1px solid;
+    vertical-align: bottom;
 }
 
 .motto {
