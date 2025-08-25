@@ -1,4 +1,21 @@
+body {
+    margin: 0px;
+    background-color: antiquewhite;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
 #main_title {
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 3rem;
+}
+
+#sub_titles {
+    text-align: center;
+}
+
+#to_links {
     text-align: center;
 }
 
@@ -18,4 +35,74 @@ table, th, td {
     text-align: center;
     border: 1px solid;
     margin: 0px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2fr 1fr 10fr 6fr 6fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 2 / 6;
+    border-bottom: 1px solid;
+}
+
+.motto {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.re {
+    grid-row: 1 / 2;
+    grid-column: 6 / 7;
+}
+
+.num {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    
+}
+
+.today {
+    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+    text-align: center;
+    background-color: aqua;
+}
+
+.hold {
+    grid-row: 2 / 3;
+    grid-column: 6 / 7;
+}
+
+.writing {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+}
+
+.projects {
+    grid-row: 3 / 5;
+    grid-column: 5 / 7;
+}
+
+.music {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+}
+
+.mr {
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+}
+
+.seo {
+    grid-row: 5 / 6;
+    grid-column: 1 / 5;
+}
+
+.sdlf {
+    grid-row: 5 / 6;
+    grid-column: 5 / 7;
 }
