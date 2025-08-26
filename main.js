@@ -8,3 +8,5 @@ if (mes < 10) {
 } else {
     document.getElementById("eldia").innerHTML = dia + "/" + mes + "/" + year
 }
+
+// Light-Dark Mode 

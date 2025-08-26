@@ -1,6 +1,14 @@
+:root {
+    --light_bg: #f8f1e3;
+    --dark_bg: #101418;
+    --light_letters: #000000;
+    --dark_letters: #ffffff;
+}
+
+
 body {
     margin: 5px;
-    background-color: antiquewhite;
+    background-color: var(--light_bg);
     max-width: 100%;
     margin-inline: auto;
 }
@@ -10,16 +18,21 @@ body {
     vertical-align: bottom;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+    color: var(--light_letters);
 }
 
 #sub_titles {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    color: var(--light_letters);
 }
 
 #to_links {
     text-align: center;
+    vertical-align: bottom;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light_letters);
+    font-size: 1.5em;
 }
 
 .index_div {
@@ -110,4 +123,12 @@ table, th, td {
 .sdlf {
     grid-row: 5 / 6;
     grid-column: 5 / 7;
+}
+
+#paragraphs {
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light_letters);
+    margin-left: 1em;
+    margin-right: 1em;
 }
