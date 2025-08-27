@@ -1,0 +1,1 @@
+Computer Disk emoji from Microsoft 

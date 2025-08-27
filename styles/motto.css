@@ -30,6 +30,7 @@
     grid-column: 2 / 3;
     border-bottom: 5px solid var(--light_letters);
     margin: 0px;
+    vertical-align: top;
 }
 
 .motto_text_container {
