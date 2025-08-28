@@ -5,37 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/papaparse@5.5.3/papaparse.min.js"></script>
     <link rel="stylesheet" href="\styles/style.css">
+    <link rel="stylesheet" href="../styles/music_registry.css">
     <title>Chofas Archive</title>
 </head>
 <body>
-    <h1 id="main_title">Music Archive</h1>
+    <div class="mreg_container">
 
-    <p>In August 2022* I began taking note of every music album I heard. Today, that list is well over 200 albums long and it can be seen right here :)</p> <br>
-    <p>Albums can also be searched by name, artist/group name, date in which I heard the album (Day/Month/Year), and Year of Release</p>
+        <h1 class="main_title" id="mreg_main_title">Music Archive</h1>
 
-    <div class="index_div">
-        <label>Album Name: <input type="text" id="nameFilter"></label> <br>
-        <label>Artist/Group: <input type="text" id="artistFilter"></label> <br>
-        <label>Listening Day of Week (0-6) <input type="number" id="weekFilter" min="0" max="6"></label> <br>
-        <label>Listening Day: <input type="number" min="1" max="31" id="dayFilter"></label> <br>
-        <label>Listening Month: <input type="number" min="1" max="12" id="monthFilter"></label> <br>
-        <label>Listening Year: <input type="number" min="2022" max="2025" id="yearFilter"></label> <br>
-        <label>Album Number: <input type="number" min="1" id="albumNumber"></label> <br>
-        <label>Year Of Release: <input type="number" id="releaseFilter"></label> <br>
-    </div>
+        <div id="mreg_intro">
+            <p class="paragraphs">In August 2022* I began taking note of every music album I heard. Today, that list is well over 200 albums long and it can be seen right here :)</p> <br>
+            <p class="paragraphs">Albums can also be searched by name, artist/group name, date in which I heard the album (Day/Month/Year), and Year of Release</p>
+        </div>
 
-    <h2>The list</h2>
-    <h4>Total: <p id="amnt"></p></h4>
+        <div class="mreg_search">
+            <div id="nameFilterDiv">
+                <h3 class="mreg_search_labels">Album Name</h3>
+                <input type="text" id="nameFilter">
+            </div>
+            <div id="artistFilterDiv">
+                <h3 >Artist/Group</h3>
+                <input type="text" id="artistFilter">
+            </div>
+            <div id="weekFilterDiv">
+                <h3 class="mreg_search_labels">Listening Day of Week (0-6)</h3>
+                <input type="number" id="weekFilter" min="0" max="6">
+            </div>
+            <div id="dayFilterDiv">
+                <h3 class="mreg_search_labels">Listening Day</h3>
+                <input type="number" min="1" max="31" id="dayFilter">
+            </div>
+            <div id="monthFilterDiv">
+                <h3 class="mreg_search_labels">Listening Month</h3>
+                <input type="number" min="1" max="12" id="monthFilter">
+            </div>
+            <div id="yearFilterDiv">
+                <h3 class="mreg_search_labels">Listening Year</h3>
+                <input type="number" min="2022" max="2025" id="yearFilter">
+            </div>
+            <div id="albumNumberDiv">
+                <h3 class="mreg_search_labels">Album Number</h3>
+                <input type="number" min="1" id="albumNumber">
+            </div>
+            <div id="releaseFilterDiv">
+                <h3 class="mreg_search_labels">Year Of Release:</h3>
+                <input type="number" id="releaseFilter">
+            </div>
+                        
+        </div>
 
-    <div class="index_div"">
-    <table id="albumsTable">
-        <thead>
-            <tr>
-                <th>Name</th><th>Artist/Group</th><th>Listening Date</th><th>Album Num</th><th>Year of Release</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <div class="album_table"">
+            <table id="albumsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Artist/Group</th><th>Listening Date</th><th>Album Num</th><th>Year of Release</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
 
     </div>
 

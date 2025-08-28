@@ -1,0 +1,79 @@
+.mreg_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 2fr 2fr auto 2fr;
+}
+
+#mreg_main_title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+}
+
+#mreg_intro {
+    grid-row: 2 / 3;
+    grid-column: 3 / 7;
+}
+
+.mreg_search {
+    grid-row: 3 / 4;
+    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+
+.mreg_search #nameFilterDiv {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.mreg_search #artistFilterDiv {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.mreg_search #weekFilterDiv {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.mreg_search #dayFilterDiv {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+.mreg_search #monthFilterDiv {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.mreg_search #yearFilterDiv {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.mreg_search #albumNumberDiv {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.mreg_search #releaseFilterDiv {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+}
+
+.mreg_search_labels {
+    text-align: center;
+}
+
+.mreg_search input {
+    width: 100%;
+}
+
+
+.album_table {
+    grid-row: 4 / 5;
+    grid-column: 2 / 8;
+}
+
