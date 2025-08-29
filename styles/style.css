@@ -32,7 +32,7 @@ body {
     vertical-align: bottom;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--light_letters);
-    font-size: 1.5em;
+    font-size: 24px;
 }
 
 .index_div {
@@ -72,31 +72,45 @@ table, th, td {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .re {
     grid-row: 1 / 2;
     grid-column: 6 / 7;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .num {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .today {
     grid-row: 2 / 3;
     grid-column: 2 / 6;
-    text-align: center;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hold {
     grid-row: 2 / 3;
     grid-column: 6 / 7;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .writing {
@@ -109,6 +123,9 @@ table, th, td {
     grid-row: 3 / 5;
     grid-column: 5 / 7;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Music Registry */

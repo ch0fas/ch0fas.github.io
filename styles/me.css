@@ -1,0 +1,126 @@
+.me_container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.me_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid;
+}
+
+.me_main_title {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    border-bottom: 3px solid;
+}
+
+.CV_section {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.me_image {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#my_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.me_about_1 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    box-shadow: 
+        0 0 0 2px var(--light_letters),
+        0.3em 0.3em 1em;
+}
+
+.me_about_2 {
+    margin-top: 10px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+    box-shadow: 
+        0 0 0 2px var(--light_letters),
+        0.3em 0.3em 1em;
+}
+
+.me_social_media {
+    margin-top: 30px;
+    grid-row: 5 / 6;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 
+        0 0 0 2px var(--light_letters),
+        0.3em 0.3em 1em;
+}
+
+.me_social_media #me_github {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.me_social_media #gh_social_image {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.me_social_media #me_twitter {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.me_social_media #twt_social_image {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.me_social_media #me_instagram {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.me_social_media #ig_social_image {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.me_social_media #me_letterboxd {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+.me_social_media #lb_social_image {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+}
+
+.me_social_media #me_pi {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+
+.me_social_media #pi_social_image {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+}
+
+.socials_images {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
