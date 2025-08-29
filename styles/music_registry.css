@@ -4,14 +4,19 @@
     grid-template-rows: 1fr 2fr 2fr auto 2fr;
 }
 
-#mreg_main_title {
+#TwoThousandTwentyThree {
     grid-row: 1 / 2;
     grid-column: 1 / 9;
 }
 
 #mreg_intro {
     grid-row: 2 / 3;
-    grid-column: 3 / 7;
+    grid-column: 2 / 8;
+    margin-top: 2em;
+
+    box-shadow: 
+        0 0 0 2px black
+        0.3em 0.3em 1em;
 }
 
 .mreg_search {
@@ -71,9 +76,28 @@
     width: 100%;
 }
 
+.mreg_search_fields {
+    margin: 5px;
+    border-width: 50px solid;
+
+}
 
 .album_table {
     grid-row: 4 / 5;
     grid-column: 2 / 8;
+    table-layout: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+#albumsTable tbody {
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#amnt {
+    grid-row: 5 / 6;
+    grid-column: 1 / 9;
+    text-align: center;
+}

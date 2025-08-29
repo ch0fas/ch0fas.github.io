@@ -11,11 +11,13 @@
 <body>
     <div class="mreg_container">
 
-        <h1 class="main_title" id="mreg_main_title">Music Archive</h1>
+        <div id="TwoThousandTwentyThree"> <!--Easter Egg: This was the year I graduated HS-->
+            <h1 class="main_title" id="mreg_main_title">Music Archive</h1>
+        </div>
 
         <div id="mreg_intro">
-            <p class="paragraphs">In August 2022* I began taking note of every music album I heard. Today, that list is well over 200 albums long and it can be seen right here :)</p> <br>
-            <p class="paragraphs">Albums can also be searched by name, artist/group name, date in which I heard the album (Day/Month/Year), and Year of Release</p>
+            <p class="paragraphs">In August 2022* I began taking note of every music album I heard. Today, that list is well over 200 albums long and it can be seen right here</p> <br>
+            <p class="paragraphs">Albums can be filtered with 8 different parameters. Feel free to play with the list below.</p>
         </div>
 
         <div class="mreg_search">
@@ -23,38 +25,38 @@
                 <h3 class="mreg_search_labels">Album Name</h3>
                 <input type="text" id="nameFilter">
             </div>
-            <div id="artistFilterDiv">
-                <h3 >Artist/Group</h3>
+            <div id="artistFilterDiv" class="mreg_search_fields">
+                <h3 class="mreg_search_labels">Artist/Group</h3>
                 <input type="text" id="artistFilter">
             </div>
-            <div id="weekFilterDiv">
-                <h3 class="mreg_search_labels">Listening Day of Week (0-6)</h3>
+            <div id="weekFilterDiv" class="mreg_search_fields">
+                <h3 class="mreg_search_labels">Listening Day of Week (1-7)</h3>
                 <input type="number" id="weekFilter" min="0" max="6">
             </div>
-            <div id="dayFilterDiv">
+            <div id="dayFilterDiv" class="mreg_search_fields">
                 <h3 class="mreg_search_labels">Listening Day</h3>
                 <input type="number" min="1" max="31" id="dayFilter">
             </div>
-            <div id="monthFilterDiv">
+            <div id="monthFilterDiv" class="mreg_search_fields">
                 <h3 class="mreg_search_labels">Listening Month</h3>
                 <input type="number" min="1" max="12" id="monthFilter">
             </div>
-            <div id="yearFilterDiv">
+            <div id="yearFilterDiv" class="mreg_search_fields">
                 <h3 class="mreg_search_labels">Listening Year</h3>
-                <input type="number" min="2022" max="2025" id="yearFilter">
+                <input type="number" min="2021" max="2025" id="yearFilter">
             </div>
-            <div id="albumNumberDiv">
+            <div id="albumNumberDiv" class="mreg_search_fields">
                 <h3 class="mreg_search_labels">Album Number</h3>
                 <input type="number" min="1" id="albumNumber">
             </div>
-            <div id="releaseFilterDiv">
-                <h3 class="mreg_search_labels">Year Of Release:</h3>
+            <div id="releaseFilterDiv" class="mreg_search_fields">
+                <h3 class="mreg_search_labels">Year Of Release</h3>
                 <input type="number" id="releaseFilter">
             </div>
                         
         </div>
 
-        <div class="album_table"">
+        <div class="album_table">
             <table id="albumsTable">
                 <thead>
                     <tr>
@@ -65,6 +67,8 @@
             </table>
 
         </div>
+
+    <h1 id="amnt"></h1>
 
     </div>
 

@@ -39,7 +39,7 @@ function applyFilters() {
         const date = row.listenDate;
         return (!user_album || row.Album_Name.toLowerCase().includes(user_album.toLowerCase()))
             && (!user_artist || row.Artist_Group.toLowerCase().includes(user_artist.toLowerCase()))
-            && (isNaN(user_week) || (date && date.getDay() == user_week))
+            && (isNaN(user_week) || (date && date.getDay() + 1 == user_week))
             && (isNaN(user_day) || (date && date.getDate() === user_day))
             && (isNaN(user_month) || (date && date.getMonth() + 1 === user_month))
             && (isNaN(user_year) || (date && date.getFullYear() === user_year))
@@ -50,6 +50,7 @@ function applyFilters() {
     displayResults(filtered);
 }
 
+// To display the table with the results
 function displayResults(data) {
     const tbody = document.querySelector('#albumsTable tbody');
     tbody.innerHTML = '';
@@ -66,5 +67,6 @@ function displayResults(data) {
         tbody.appendChild(tr);
     });
 
-    document.getElementById('amnt').textContent = `Rows: ${data.length} / ${albumData.length}`;
+    document.getElementById('amnt').textContent = `Albums: ${data.length} / ${albumData.length}`;
 }
+
