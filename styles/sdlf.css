@@ -1,0 +1,42 @@
+.sdlf_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.sdlf_back_home {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sdlf_main_title {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.sdlf_explained {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+}
+
+.sdlf_classes {
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.class_header {
+    text-align: center;
+
+}
+
+.class_entries {
+    text-align: center;
+    font-size: 1rem;
+}
+

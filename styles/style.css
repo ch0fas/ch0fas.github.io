@@ -184,6 +184,9 @@ table, th, td {
     grid-row: 5 / 6;
     grid-column: 5 / 7;
     border: 1px solid var(--light_letters);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragraphs {
