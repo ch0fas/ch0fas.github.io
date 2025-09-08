@@ -1,0 +1,58 @@
+/* Necesidades
+    Título DONE
+    Back To Articles DONE
+    Fecha ADDED
+    Tl;DR ADDED
+    Subtítulo 
+    Cuerpo
+    Código
+    Imágenes
+    Citas
+    Outro
+*/
+
+.article_container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.article_title {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    text-align: center;
+    
+}
+
+#article_back_home {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.article_date {
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.tldr {
+    text-align: center;
+    color: grey;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.article_content {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    display: grid;
+}
+
+.subtitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quote {
+    text-align: center;
+    
+}

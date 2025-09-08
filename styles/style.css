@@ -33,6 +33,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--light_letters);
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .index_div {
@@ -195,6 +198,7 @@ table, th, td {
     color: var(--light_letters);
     padding-left: 10px;
     padding-right: 10px;
+    text-indent: 3rem;
 }
 
 @media (max-width: 1024px){
