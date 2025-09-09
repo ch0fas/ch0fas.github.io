@@ -17,20 +17,20 @@ body {
     text-align: center;
     vertical-align: bottom;
     font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--light_letters);
 }
 
-#sub_titles {
+.sub_titles {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--light_letters);
 }
 
 .to_links {
     text-align: center;
     vertical-align: bottom;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--light_letters);
     font-size: 1.5rem;
     display: flex;
@@ -194,7 +194,7 @@ table, th, td {
 
 .paragraphs {
     font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: var(--light_letters);
     padding-left: 10px;
     padding-right: 10px;

@@ -124,3 +124,9 @@
     margin-right: auto;
     width: 50%;
 }
+
+.me_dark_light_mode {
+    border-bottom: 3px solid;
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
