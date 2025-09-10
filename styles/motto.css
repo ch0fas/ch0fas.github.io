@@ -41,4 +41,6 @@
     box-shadow: 
         0 0 0 2px var(--light_letters),
         0.3em 0.3em 1em;
+    
+    padding-bottom: 1rem;
 }

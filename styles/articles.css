@@ -11,48 +11,89 @@
     Outro
 */
 
+@media (max-width: 768px) {
+    .article_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .article_title,
+    #article_back_home,
+    .article_date,
+    .tldr,
+    .article_content {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
 .article_container {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
-.article_title {
+
+
+.article_title_container {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    border-bottom: 3px solid;
+}
+
+.article_title {
+    font-size: 3rem;
     text-align: center;
-    
 }
 
 #article_back_home {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    border-bottom: 3px solid;
+}
+
+.article_right_title {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    border-bottom: 3px solid;
 }
 
 .article_date {
     text-align: center;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 .tldr {
-    text-align: center;
+    text-align: justify;
     color: grey;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    font-weight: bold;
 }
 
 .article_content {
     grid-row: 4 / 5;
     grid-column: 1 / 4;
     display: grid;
+
+    border: 0.2rem solid;
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .subtitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .quote {
-    text-align: center;
-    
+    text-align: center;   
 }
