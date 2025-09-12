@@ -10,11 +10,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid;
 }
 
 .sdlf_main_title {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    border-bottom: 3px solid;
+}
+
+.sdlf_right_title {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    border-bottom: 3px solid;
 }
 
 .sdlf_explained {
@@ -32,11 +40,14 @@
 
 .class_header {
     text-align: center;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .class_entries {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    height: 90%;   
 }
 
