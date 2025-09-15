@@ -14,7 +14,7 @@
 @media (max-width: 768px) {
     .article_container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        margin: 0 0.5rem;
     }
 
     .article_title,
@@ -42,7 +42,7 @@
 }
 
 .article_title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -81,11 +81,9 @@
 
     border: 0.2rem solid;
     
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .subtitle {
