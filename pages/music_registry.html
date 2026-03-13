@@ -1,82 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/papaparse@5.5.3/papaparse.min.js"></script>
-    <link rel="stylesheet" href="\styles/style.css">
-    <link rel="stylesheet" href="../styles/music_registry.css">
-    <title>Chofas Archive</title>
-</head>
-<body>
-    <div class="mreg_container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/papaparse@5.5.3/papaparse.min.js"></script>
+        <link rel="stylesheet" href="\styles/style.css" />
+        <link rel="stylesheet" href="../styles/music_registry.css" />
+        <title>Chofas Archive</title>
+    </head>
+    <body>
+        <div class="mreg_container">
+            <div id="TwoThousandTwentyThree">
+                <!--Easter Egg: This was the year I graduated HS-->
+                <h1 class="main_title" id="mreg_main_title">Music Archive</h1>
+            </div>
 
-        <div id="TwoThousandTwentyThree"> <!--Easter Egg: This was the year I graduated HS-->
-            <h1 class="main_title" id="mreg_main_title">Music Archive</h1>
+            <div class="mreg_back_home">
+                <a href="../index.html" class="to_links">Back To Home Screen</a>
+            </div>
+
+            <div class="mreg_intro">
+                <p class="paragraphs" id="mreg_paragraphs">
+                    In August 2022* I began taking note of every album I heard.
+                    Today, that list is well over 200 albums long and it can be
+                    seen right here.
+                </p>
+                <br />
+                <p class="paragraphs" id="mreg_paragraphs">
+                    Albums can be filtered with 8 different parameters. Feel
+                    free to play with the list below.
+                </p>
+            </div>
+
+            <div class="mreg_search">
+                <div id="nameFilterDiv">
+                    <h3 class="mreg_search_labels">Album Name</h3>
+                    <input type="text" id="nameFilter" />
+                </div>
+                <div id="artistFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Artist/Group</h3>
+                    <input type="text" id="artistFilter" />
+                </div>
+                <div id="weekFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">
+                        Listening Day of Week (1-7)
+                    </h3>
+                    <input type="number" id="weekFilter" min="0" max="6" />
+                </div>
+                <div id="dayFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Listening Day</h3>
+                    <input type="number" min="1" max="31" id="dayFilter" />
+                </div>
+                <div id="monthFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Listening Month</h3>
+                    <input type="number" min="1" max="12" id="monthFilter" />
+                </div>
+                <div id="yearFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Listening Year</h3>
+                    <input
+                        type="number"
+                        min="2021"
+                        max="2050"
+                        id="yearFilter"
+                    />
+                </div>
+                <div id="albumNumberDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Album Number</h3>
+                    <input type="number" min="1" id="albumNumber" />
+                </div>
+                <div id="releaseFilterDiv" class="mreg_search_fields">
+                    <h3 class="mreg_search_labels">Year Of Release</h3>
+                    <input type="number" id="releaseFilter" />
+                </div>
+            </div>
+
+            <div class="album_table">
+                <table id="albumsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Artist/Group</th>
+                            <th>Listening Date</th>
+                            <th>Album Num</th>
+                            <th>Year of Release</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <h1 id="amnt"></h1>
         </div>
 
-        <div class="mreg_back_home">
-            <a href="../index.html" class="to_links">Back To Home Screen</a>
-        </div>
-
-        <div class="mreg_intro">
-            <p class="paragraphs" id="mreg_paragraphs">In August 2022* I began taking note of every album I heard. Today, that list is well over 200 albums long and it can be seen right here.</p> <br>
-            <p class="paragraphs" id="mreg_paragraphs">Albums can be filtered with 8 different parameters. Feel free to play with the list below.</p>
-        </div>
-
-        <div class="mreg_search">
-            <div id="nameFilterDiv">
-                <h3 class="mreg_search_labels">Album Name</h3>
-                <input type="text" id="nameFilter">
-            </div>
-            <div id="artistFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Artist/Group</h3>
-                <input type="text" id="artistFilter">
-            </div>
-            <div id="weekFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Listening Day of Week (1-7)</h3>
-                <input type="number" id="weekFilter" min="0" max="6">
-            </div>
-            <div id="dayFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Listening Day</h3>
-                <input type="number" min="1" max="31" id="dayFilter">
-            </div>
-            <div id="monthFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Listening Month</h3>
-                <input type="number" min="1" max="12" id="monthFilter">
-            </div>
-            <div id="yearFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Listening Year</h3>
-                <input type="number" min="2021" max="2025" id="yearFilter">
-            </div>
-            <div id="albumNumberDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Album Number</h3>
-                <input type="number" min="1" id="albumNumber">
-            </div>
-            <div id="releaseFilterDiv" class="mreg_search_fields">
-                <h3 class="mreg_search_labels">Year Of Release</h3>
-                <input type="number" id="releaseFilter">
-            </div>
-                        
-        </div>
-
-        <div class="album_table">
-            <table id="albumsTable">
-                <thead>
-                    <tr>
-                        <th>Name</th><th>Artist/Group</th><th>Listening Date</th><th>Album Num</th><th>Year of Release</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-
-        </div>
-
-    <h1 id="amnt"></h1>
-
-    </div>
-
-
-    <script src="\js/mr.js"></script>
-</body>
+        <script src="\js/mr.js"></script>
+    </body>
 </html>
