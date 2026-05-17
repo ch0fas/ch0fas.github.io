@@ -1,0 +1,98 @@
+.music_registry_container
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 2fr 2fr auto 2fr;
+}
+
+#music_registry_back_home
+{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music_registry_main_title
+{
+    grid-row: 1/2;
+    grid-column: 3/7;
+}
+
+#music_registry_text_container
+{
+    grid-row: 2/3;
+    grid-column: 2/8;
+    margin-top: 2rem;
+}
+
+#mreg_search_parameters
+{
+    grid-row: 3/4;
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.mreg_search_labels
+{
+    text-align: center;
+}
+
+#mreg_search_parameters input
+{
+    width: 100%;
+}
+
+table, th, td
+{
+    text-align: center;
+    border: 1px solid;
+    margin: 0px auto;
+}
+
+
+#album_table_div
+{
+    grid-row: 4/5;
+    grid-column: 2/8;
+    table-layout: fixed;
+}
+
+#albums_table
+{
+    text-align: center;
+}
+
+#albums_table tbody
+{
+    overflow: hidden;
+}
+
+
+#amnt
+{
+    grid-row: 5/6;
+    grid-column: 1/9;
+    text-align: center;
+}
+
+@media (max-width: 40rem)
+{
+    .music_registry_container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .music_registry_container > *
+    {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+}

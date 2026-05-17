@@ -12,4 +12,9 @@ if (mes < 10 && dia < 10) {
 } else {
     document.getElementById("eldia").innerHTML = dia + "/" + mes + "/" + year
 }
-// Light-Dark Mode 
+
+birthday = new Date("2005-04-17");
+const diffMs = Math.abs(fecha - birthday);
+const diffDays = Math.floor(diffMs / (1000*60*60*24));
+
+document.getElementById("num").innerHTML = "No. " + diffDays;

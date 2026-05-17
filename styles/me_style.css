@@ -1,0 +1,45 @@
+.me_container
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#me_back_home
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#me_main_title
+{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#me_text_container
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#me_links
+{
+    text-align: center;
+}
+
+@media (max-width: 40rem)
+{
+    .me_container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .me_container > *
+    {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+}
