@@ -10,12 +10,28 @@ a, p
     font-size: 0.75rem;
 }
 
+h3
+{
+    font-size: 1rem;
+}
+
+
 @media (min-width: 40rem) 
 {
     a, p, .to_links
     {
         font-size: 1.5em;    
     }
+
+    h3
+    {
+        font-size: 2rem;
+    }
+}
+
+code
+{
+    background-color: lightgray;
 }
 
 .paragraphs

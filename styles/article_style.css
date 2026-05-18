@@ -1,0 +1,65 @@
+.article_container
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.article_back_home
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.article_name
+{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.article_info
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.article_content
+{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.article_title
+{
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 40rem)
+{
+    .article_title
+    {
+        font-size: 1.5rem;
+    }
+}
+
+#article_date
+{
+    text-align: center;
+}
+
+@media (max-width: 40rem)
+{
+    .article_container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .article_container > *
+    {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+}
