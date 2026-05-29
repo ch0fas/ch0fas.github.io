@@ -8,13 +8,23 @@ body
 a, p
 {
     font-size: 0.75rem;
+    font-family: 'Junicode';
 }
 
-h3
+h1
 {
     font-size: 1rem;
 }
 
+h2
+{
+    font-size: 0.75rem;
+}
+
+h3
+{
+    font-size: 0.5rem;
+}
 
 @media (min-width: 40rem) 
 {
@@ -25,13 +35,39 @@ h3
 
     h3
     {
+        font-size: 1rem;
+    }
+    h1
+    {
         font-size: 2rem;
+    }
+    h2
+    {
+        font-size: 1.5rem;
     }
 }
 
 code
 {
     background-color: lightgray;
+    font-family: 'MPlus1';
+}
+
+@font-face
+{
+    font-family: YoungSerif;
+    src: url("../assets/fonts/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: Junicode;
+    src: url("../assets/fonts/Junicode-Ansund-Regular.otf");
+}
+
+@font-face
+{
+    font-family: MPlus1;
+    src: url("../assets/fonts/MPLUS1Code-Regular.ttf");
 }
 
 .paragraphs
@@ -61,6 +97,7 @@ code
     border-bottom: 1px solid;
     vertical-align: bottom;
     border: 1px solid;
+    font-family: 'YoungSerif';
 }
 
 #motto
