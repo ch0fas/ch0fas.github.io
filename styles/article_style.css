@@ -43,14 +43,6 @@
     text-align: center;
 }
 
-@media (min-width: 40rem)
-{
-    .article_title
-    {
-        font-size: 1.5rem;
-    }
-}
-
 #article_date
 {
     text-align: center;
@@ -67,6 +59,20 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.quote
+{
+    text-align: center;
+    background-color: lightgray;
+}
+
+@media (min-width: 40rem)
+{
+    .article_title
+    {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 40rem)
